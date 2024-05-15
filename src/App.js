@@ -1,25 +1,23 @@
 import logo from './logo.svg';
 import './App.css';
+import Car, { Car2 } from './Car';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const isLoggedIn = true;
+
+    const isRaining = true;
+
+    const speed = 50;
+
+    return (
+        <div className="App">
+            {isLoggedIn ? 'welcome arun' : 'please login'}
+
+            <div id="new_div_by_arun"></div>
+            <Car color="red" isRaining={isRaining} speed={speed} />
+            <Car2 color="green" isRaining={isRaining} />
+        </div>
+    );
 }
 
 export default App;
