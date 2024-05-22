@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import Car, { Car2 } from './Car';
 import CountryList from './CountryList';
+import CountryListFunctionalComponent from './CountryListFunctionalComponent';
 
 function App() {
     const isLoggedIn = true;
@@ -17,7 +18,10 @@ function App() {
             <div id="new_div_by_arun"></div>
             <Car color="red" isRaining={isRaining} speed={speed} />
             <Car2 color="green" isRaining={isRaining} />
-            <CountryList />
+            {/* <CountryList /> */}
+            <hr />
+
+            <CountryListFunctionalComponent />
         </div>
     );
 }
