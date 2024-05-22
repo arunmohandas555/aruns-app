@@ -22,6 +22,7 @@ export default function CountryListFunctionalComponent() {
 
                     console.log('countryList', countryList);
 
+                    setCountryList(countryList);
                 })
                 .catch(error => {
                     console.log('in catch');
